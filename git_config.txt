@@ -1,0 +1,2 @@
+git config --global http.proxy http://prenom.nom:password@isen.isen.fr:3128
+git config --global https.proxy https://prenom.nom:password@isen.isen.fr:3128
