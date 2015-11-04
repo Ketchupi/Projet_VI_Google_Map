@@ -28,6 +28,17 @@ int main (int argc, char *argv[] ) {
     if (image == NULL)
         return 0;
 	printf("La taille de l'image est %d de hauteur par %d de largeur mdr lol xD\n Maillot on te baise \n", image->hauteurImage, image->largeurImage);
+//	printf("%d, %d, %d\n", sizeof(rouge), sizeof(vert), sizeof(bleu));
+	
+	for(i=0; i<image->largeurImage; i++) {
+		free(rouge[i]);
+//		free(*(vert+i));
+	//	free(*(bleu+i));
+	}
+	free(rouge);
+//	free(vert);
+//	free(bleu);
+//	libereDonneesImageRGB(image);
 	
 	return 0;
 	
